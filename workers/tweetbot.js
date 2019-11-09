@@ -12,7 +12,7 @@ module.exports = {
           access_token: await secrets.get("twitter_access_token"),
           access_token_secret: await secrets.get("twitter_access_token_secret")
         });
-        T.post("statuses/update", { status: "hello world!" }, function(
+        T.post("statuses/update", { status: "Hello world!" }, function(
           err,
           data,
           response
