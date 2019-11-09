@@ -1,6 +1,8 @@
 {
   "name": "simple-worker-template",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
   "scripts": {}
 }
