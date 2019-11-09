@@ -6,7 +6,7 @@ module.exports = {
   },
   handlers: ({ json, html, text }, { secrets }, { twit: Twit }) => ({
     get: {},
-    put: {
+    post: {
       "/tweet": async (req, _, log) => {
         let body = await req.json();
 
