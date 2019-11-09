@@ -7,6 +7,7 @@ module.exports = {
     put: {
       "/tweet": async (req, _, log) => {
         let body = await req.json();
+
         const T = new Twit({
           consumer_key: await secrets.get("twitter_api_key"),
           consumer_secret: await secrets.get("twitter_api_secret_key"),
