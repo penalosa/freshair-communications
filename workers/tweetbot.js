@@ -1,9 +1,10 @@
-const Twit = require("twit");
-
 module.exports = {
   domain: "freshair.org.uk",
   namespaces: ["secrets"],
-  handlers: ({ json, html, text }, { secrets }) => ({
+  dependencies: {
+    twit: "^2.2.11"
+  },
+  handlers: ({ json, html, text }, { secrets }, { twit: Twit }) => ({
     get: {},
     put: {
       "/tweet": async (req, _, log) => {
