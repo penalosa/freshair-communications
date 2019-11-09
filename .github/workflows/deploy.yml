@@ -11,10 +11,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - name: Install frontend dependencies
-        run: npm install
-      - name: Run build command
-        run: npm run build
+
       - name: CF Deploy
         uses: penalosa/conductor@master
         with:
