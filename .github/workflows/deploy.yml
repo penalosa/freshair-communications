@@ -18,9 +18,4 @@ jobs:
       - name: CF Deploy
         uses: penalosa/conductor@master
         with:
-          zone_id: ${{ secrets.zone_id }}
-          api_key: ${{ secrets.api_key }}
-          account_id: ${{ secrets.account_id }}
-          email: ${{ secrets.email }}
-          domain: dash.penalosa.dev
-          bucket: ./build
+          cloudflare: ${{ secrets.cloudflare }}
