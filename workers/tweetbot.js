@@ -4,6 +4,7 @@ module.exports = {
   domain: "freshair.org.uk",
   namespaces: ["secrets"],
   handlers: ({ json, html, text }, { secrets }) => ({
+    get: {},
     put: {
       "/tweet": async (req, _, log) => {
         let body = await req.json();
