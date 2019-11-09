@@ -1,5 +1,5 @@
 module.exports = {
-  domain: "example.com",
+  domain: "freshair.org.uk",
   namespaces: ["secrets"],
   handlers: ({ json, html, text }, { secrets }) => ({
     get: {
